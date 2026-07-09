@@ -8,13 +8,16 @@ Welcome to my IT Support portfolio. This repository showcases real-world technic
 * **Operating Systems:** Windows 10/11 Enterprise, OS Deployment & Image Recovery
 * **Networking:** TCP/IP Stack, DNS, DHCP, LAN Connectivity, Switch Port Diagnostics
 * **Command-Line Tools:** `ipconfig`, `ping`, `traceroute`, `nslookup`
-## 🚀 Live Portfolio
+## ## 🚀 Live Interactive Portfolio
 
-Looking for a deep dive into my hands-on technical work? 
+Want to see how I translate technical knowledge into seamless end-user resolutions? Explore my live interactive portfolio showcasing real-world troubleshooting frameworks, enterprise ticketing documentation, and multi-campus network diagnostics:
 
-👉 **[View My Detailed Impact Projects & Case Studies](https://Victor-Donald.github.io/IT-Portfolo/)**
+👉 **[View My Detailed Impact Projects & Case Studies](https://victor-donald.github.io/IT-Portfolo/)**
 
-*Featuring real-world ticket resolutions, remote OS recovery workflows, and enterprise network diagnostics.*
+* **Featured Workloads:**
+  * **Incident Management:** Hands-on Remedy (BMC Helix) workflow simulations and SLA-compliant ticket resolution documentation.
+  * **Remote Endpoint Support:** Step-by-step OS deployment, authenticated network boots, and system recovery workflows.
+  * **Network Diagnostics:** Utilizing core command-line utilities (`ipconfig`, `ping`, `traceroute`) to isolate and resolve connectivity drops.
 ---
 
 ## 📋 Featured Projects & Workflow Simulations
