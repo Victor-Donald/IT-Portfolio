@@ -1,152 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT Professional Portfolio</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f9f9f9;
-        }
-        h1 {
-            color: #1a365d;
-            border-bottom: 2px solid #2b6cb0;
-            padding-bottom: 10px;
-        }
-        h2 {
-            color: #2b6cb0;
-            margin-top: 30px;
-            border-bottom: 1px solid #e2e8f0;
-            padding-bottom: 5px;
-        }
-        h3 {
-            color: #2d3748;
-            margin-top: 20px;
-        }
-        h4 {
-            color: #4a5568;
-            margin-bottom: 5px;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 8px;
-        }
-        .project-meta {
-            background-color: #ebf8ff;
-            border-left: 4px solid #3182ce;
-            padding: 12px;
-            margin: 15px 0;
-            border-radius: 0 4px 4px 0;
-        }
-        .project-meta p {
-            margin: 4px 0;
-            font-size: 0.95rem;
-        }
-        .case-study {
-            background-color: #fff;
-            border: 1px solid #e2e8f0;
-            border-top: 4px solid #4a5568;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 4px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-        }
-        code {
-            background-color: #edf2f7;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-            font-size: 0.9em;
-        }
-        pre {
-            background-color: #1a202c;
-            color: #edf2f7;
-            padding: 15px;
-            border-radius: 6px;
-            overflow-x: auto;
-            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-            font-size: 0.9rem;
-            line-height: 1.4;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enterprise IT Help Desk & Remote Support Portfolio</title>
+  <style>
+    :root {
+      --primary-color: #0366d6;
+      --text-color: #24292e;
+      --bg-color: #f6f8fa;
+      --border-color: #e1e4e8;
+      --success-color: #28a745;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text-color);
+      line-height: 1.6;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #24292e;
+      color: #ffffff;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 600;
+    }
+
+    header p {
+      margin: 10px 0 0 0;
+      font-size: 16px;
+      color: #c8e1ff;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    h2 {
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 8px;
+      color: var(--primary-color);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 40px;
+      font-size: 22px;
+    }
+
+    p {
+      font-size: 16px;
+      margin: 16px 0;
+    }
+
+    /* Core Technical Skills Table */
+    .skills-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0;
+      font-size: 15px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+    }
+
+    .skills-table th {
+      background-color: var(--bg-color);
+      border: 1px solid #d1d5db;
+      padding: 12px;
+      text-align: left;
+      width: 25%;
+      font-weight: 600;
+    }
+
+    .skills-table td {
+      border: 1px solid #d1d5db;
+      padding: 12px;
+    }
+
+    .skills-table tr:nth-child(even) {
+      background-color: #f9fafb;
+    }
+
+    code {
+      background-color: rgba(175, 184, 193, 0.2);
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-family: ui-monospace, SFMono-Regular, SF Pro Text, Menlo, Monaco, Consolas, monospace;
+      font-size: 13px;
+    }
+
+    /* Action Links */
+    .portfolio-cta {
+      margin: 24px 0;
+      font-size: 18px;
+    }
+
+    .portfolio-cta a {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: bold;
+      border-bottom: 2px dashed var(--primary-color);
+      transition: color 0.2s ease;
+    }
+
+    .portfolio-cta a:hover {
+      color: #02428a;
+      border-bottom-style: solid;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 30px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      font-size: 15px;
+    }
+
+    /* Project Cards */
+    .project-card {
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 24px;
+      margin-bottom: 24px;
+      background-color: #ffffff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+      color: #24292e;
+      font-size: 18px;
+      border-bottom: 1px solid var(--bg-color);
+      padding-bottom: 10px;
+    }
+
+    /* Remedy Ticketing Look and Feel */
+    .ticketing-box {
+      background-color: var(--bg-color);
+      border-left: 4px solid var(--success-color);
+      padding: 16px;
+      margin-top: 20px;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .ticketing-box h4 {
+      margin: 0 0 10px 0;
+      color: var(--success-color);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-weight: 700;
+    }
+
+    .ticketing-box p {
+      margin: 0;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 13.5px;
+      color: #444d56;
+      line-height: 1.5;
+    }
+
+    .ticket-label {
+      font-weight: bold;
+      color: #222222;
+    }
+  </style>
 </head>
 <body>
 
-    <h1>IT Professional Portfolio</h1>
+  <header>
+    <h1>IT-Portfolio</h1>
+    <p>Enterprise IT Help Desk & Remote Support Portfolio</p>
+  </header>
 
-    <h2>Professional Summary</h2>
-    <p><strong>Motivated</strong> and detail-oriented IT professional with foundational knowledge in computer systems, networking, and technical troubleshooting. Skilled in diagnosing hardware, software, and user support issues while providing clear and effective solutions. Experienced with Windows operating systems, basic network concepts, and utilizing the <strong>Remedy ticketing system (BMC Helix)</strong> to manage, triage, and systematically resolve technical support incidents from intake to closure. Strong problem-solving and communication skills with a commitment to delivering excellent technical support and continuously expanding IT expertise.</p>
+  <main>
+    <p>Welcome to my IT Support portfolio. This repository showcases real-world technical troubleshooting workflows, incident lifecycle management, and multi-campus network diagnostics engineered to enterprise standards.</p>
 
-    <h2>Featured Projects</h2>
+    <!-- Core Technical Skills -->
+    <h2><span>🛠️</span> Professional Profile & Core Competencies</h2>
+    <table class="skills-table">
+      <thead>
+        <tr>
+          <th>Domain</th>
+          <th>Technical Competencies</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Ticketing Systems</strong></td>
+          <td>Remedy (BMC Helix) Incident Management, SLA Compliance Tracking</td>
+        </tr>
+        <tr>
+          <td><strong>Operating Systems</strong></td>
+          <td>Windows 10/11 Enterprise, Automated OS Deployment, Advanced Image Recovery</td>
+        </tr>
+        <tr>
+          <td><strong>Enterprise Networking</strong></td>
+          <td>TCP/IP Stack, DNS/DHCP Architecture, LAN Connectivity, Switch Port Diagnostics</td>
+        </tr>
+        <tr>
+          <td><strong>Diagnostics Toolkit</strong></td>
+          <td><code>ipconfig</code>, <code>ping</code>, <code>traceroute</code>, <code>nslookup</code></td>
+        </tr>
+      </tbody>
+    </table>
 
-    <!-- Project 1 -->
-    <h3>Remote IT Support & Lifecycle Management</h3>
-    <div class="project-meta">
-        <p><strong>Work-Study:</strong> Academic Federal Work-Study Project</p>
-        <p><strong>Scope:</strong> DeVry University (Virginia Campuses / Remote Operations)</p>
-        <p><strong>Platform Utilized:</strong> Remedy (BMC Helix) & Remote Assistance Deployment Tools</p>
-    </div>
-    <p>A case study detailing the remote IT support workflow managed across multiple DeVry University Virginia campus locations. This project highlights efficient, decentralized ticket categorization, priority-based triage, and remote resolution processes—such as deploying stable system recovery images—to maintain student and faculty uptime while driving operational continuity from a distance.</p>
+    <!-- Live Interactive Portfolio -->
+    <h2><span>🚀</span> Live Interactive Portfolio</h2>
+    <p>Want to see how I translate technical expertise into seamless, high-availability end-user resolutions? Explore my live interactive portfolio showcasing real-world troubleshooting frameworks, enterprise ticketing documentation, and multi-campus network diagnostics:</p>
+    
+    <p class="portfolio-cta">
+      👉 <strong><a href="https://victor-donald.github.io/IT-Portfolio/">View My Detailed Impact Projects & Case Studies</a></strong>
+    </p>
 
-    <h4>Core Capabilities Demonstrated:</h4>
+    <h3 style="font-size: 16px; margin-bottom: 8px;">Key Focus Areas:</h3>
     <ul>
-        <li><strong>Multi-Campus Ticket Triage:</strong> Logged and prioritized incoming regional campus requests based on severity, ensuring strict compliance with operational SLAs.</li>
-        <li><strong>Remote Hardware & Software Diagnostics:</strong> Utilized remote desktop protocols and logical isolation steps to diagnose Windows OS glitches, network profile issues, and endpoint faults without physical machine access.</li>
-        <li><strong>Deployment & Image Recovery:</strong> Guided end-users through secure cloud and network boot recovery environments to safely deploy clean system images on compromised operating systems.</li>
-        <li><strong>Documentation Excellence:</strong> Maintained comprehensive resolution notes within Remedy to expand historical knowledge bases and streamline future cross-campus troubleshooting.</li>
+      <li><strong>Incident Management:</strong> Hands-on Remedy (BMC Helix) workflow simulations and SLA-compliant ticket resolution documentation.</li>
+      <li><strong>Remote Endpoint Support:</strong> Step-by-step OS deployment, authenticated network boots, and advanced system recovery workflows.</li>
+      <li><strong>Network Diagnostics:</strong> Utilizing core command-line utilities to isolate, triage, and resolve complex connectivity drops.</li>
     </ul>
 
-    <div class="case-study">
-        <h3>📋 Case Study: Cross-Campus Operating System Recovery</h3>
-        <p><em>This scenario details how I systematically resolve an urgent, remote multi-layered ticket using Remedy.</em></p>
-        <ul>
-            <li><strong>The Incident:</strong> A remote user at a Virginia campus location logged a high-urgency ticket stating their primary system crashed during an operational session, causing a persistent boot loop.</li>
-            <li><strong>Diagnostics & Isolation:</strong> Isolated the issue to a corrupted system update that disrupted the local boot configuration data (BCD).</li>
-            <li><strong>The Remote Resolution:</strong> Walked the user through initializing a secure, network-authenticated boot recovery environment to deploy a clean, DeVry-validated recovery image over the network.</li>
-        </ul>
-        <h4>Remedy Closure Entry:</h4>
-        <pre>Status: Closed.
-Root Cause: OS/Software corruption post-update.
-Resolution: Initiated secure network boot, successfully deployed DeVry-validated recovery image, and repaired BCD integrity. Verified remote domain connectivity. Completed within 45-minute SLA milestone.</pre>
+    <!-- Featured Projects Section -->
+    <h2><span>📋</span> High-Impact Projects & Workflow Simulations</h2>
+
+    <!-- Project 1 -->
+    <div class="project-card">
+      <h3>1. Remote IT Support & Lifecycle Management (DeVry University Simulation)</h3>
+      <p><strong>Scenario:</strong> A remote user at a regional Virginia campus experienced a critical, persistent boot loop following a corrupted system update, halting standard business operations.</p>
+      <p><strong>Triage & Resolution:</strong> Logged, categorized, and prioritized the high-impact ticket in Remedy. Remotely isolated a Boot Configuration Data (BCD) corruption and successfully guided the end-user through an authenticated network boot (PXE) environment to deploy a clean, DeVry-validated system recovery image.</p>
+      
+      <div class="ticketing-box">
+        <h4>Enterprise Remedy Closure Entry</h4>
+        <p>
+          <span class="ticket-label">Status:</span> Closed | 
+          <span class="ticket-label">Root Cause:</span> OS/Software Corruption (Post-Update)<br><br>
+          <span class="ticket-label">Resolution:</span> Initiated secure network boot, successfully deployed a validated recovery image, and restored BCD integrity. Verified remote domain connectivity and authenticated corporate login. Completed within the 45-minute SLA milestone.
+        </p>
+      </div>
     </div>
 
     <!-- Project 2 -->
-    <h3>Enterprise Network Diagnostics & Support Simulation</h3>
-    <div class="project-meta">
-        <p><strong>Scope:</strong> DeVry University (Virginia Campuses / Remote Lab Environment)</p>
-        <p><strong>Platform Utilized:</strong> Remedy (BMC Helix) & Command-Line Diagnostics (CLI)</p>
+    <div class="project-card">
+      <h3>2. Enterprise Network Diagnostics & Infrastructure Support Simulation</h3>
+      <p><strong>Scenario:</strong> A campus staff member lost all access to the localized intranet and student registration databases, disrupting critical administrative and student workflows.</p>
+      <p><strong>Triage & Resolution:</strong> Utilized advanced command-line diagnostics (<code>ipconfig /all</code>) to identify an autoconfigured APIPA address (<code>169.254.x.x</code>), indicating a failed DHCP lease. Coordinated an immediate localized switch port reset with infrastructure teams and executed an IP release/renew cycle to successfully bind the client device to a valid dynamic campus subnet.</p>
+      
+      <div class="ticketing-box">
+        <h4>Enterprise Remedy Closure Entry</h4>
+        <p>
+          <span class="ticket-label">Status:</span> Closed | 
+          <span class="ticket-label">Root Cause:</span> Failed DHCP Lease via Localized Switch Port Drop<br><br>
+          <span class="ticket-label">Resolution:</span> Confirmed physical NIC functionality via loopback testing, performed IP release/renew, and successfully bound the device to the active campus subnet. Verified secure database and intranet access. All Service Level Agreements (SLAs) successfully met.
+        </p>
+      </div>
     </div>
-    <p>A case study detailing the structured troubleshooting workflow used to diagnose and resolve cross-campus network connectivity issues. This project highlights systematic problem isolation, local vs. network-level fault determination, and effective ticketing documentation within Remedy to ensure student and administrative portal uptime.</p>
 
-    <h4>Core Capabilities Demonstrated:</h4>
-    <ul>
-        <li><strong>Network Triage & Categorization:</strong> Identified and logged incoming connectivity requests, separating local hardware faults from broader network outages to assign correct priority levels.</li>
-        <li><strong>Command-Line Diagnostics:</strong> Utilized essential CLI utilities (<code>ping</code>, <code>traceroute</code>, <code>nslookup</code>, <code>ipconfig</code>) to trace routing paths, verify DNS configurations, and test gateway response times.</li>
-        <li><strong>TCP/IP Stack Isolation:</strong> Applied a top-down troubleshooting methodology to verify connectivity at the application, transport, network, and physical layers.</li>
-    </ul>
+    <!-- Live Website Verification -->
+    <h2><span>🌐</span> Live Website</h2>
+    <p>You can view the full, interactive layout of this portfolio live on the web:</p>
+    <p class="portfolio-cta">
+      👉 <strong><a href="https://victor-donald.github.io/IT-Portfolio/">View My Live Portfolio Site</a></strong>
+    </p>
 
-    <div class="case-study">
-        <h3>📋 Case Study: Local Area Network (LAN) Connectivity Resolution</h3>
-        <p><em>This scenario details how I systematically resolve an urgent network-related ticket using Remedy.</em></p>
-        <ul>
-            <li><strong>The Incident:</strong> A staff member at a Virginia campus location lost all access to the local intranet and student registration database.</li>
-            <li><strong>Diagnostics & Isolation:</strong> Ran <code>ipconfig /all</code>, discovering an invalid APIPA address (169.254.x.x), indicating a failure to reach the DHCP server due to a temporary switch port drop.</li>
-            <li><strong>The Resolution:</strong> Coordinated a port status reset, then executed <code>ipconfig /release</code> and <code>ipconfig /renew</code> to bind the device to a valid dynamic campus subnet.</li>
-        </ul>
-        <h4>Remedy Closure Entry:</h4>
-        <pre>Status: Closed.
-Root Cause: Failed DHCP lease due to localized switch port drop.
-Resolution: Confirmed NIC functionality via loopback, performed IP release/renew, and bound device to valid campus subnet. Verified database access. SLA met.</pre>
-    </div>
+  </main>
 
 </body>
-</html>
 </html>
