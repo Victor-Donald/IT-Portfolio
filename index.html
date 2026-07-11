@@ -3,143 +3,196 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Victor Donald | Remote IT Support Portfolio</title>
+    <title>IT Portfolio | Professional Overview</title>
     <style>
+        :root {
+            --primary: #1a73e8;
+            --primary-hover: #1557b0;
+            --text-main: #202124;
+            --text-muted: #5f6368;
+            --bg-light: #f8f9fa;
+            --border-color: #dadce0;
+        }
+
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
-            color: #333;
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f8f9fa;
-        }
-        header {
-            background-color: #0f172a;
-            color: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        header h1 {
+            color: var(--text-main);
+            background-color: #ffffff;
             margin: 0;
-            font-size: 2.5rem;
+            padding: 0;
         }
-        header p {
-            margin: 10px 0 0;
-            font-size: 1.2rem;
-            color: #94a3b8;
-        }
+
         .container {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Top Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 15px;
+            margin-bottom: 40px;
+        }
+
+        nav .nav-links {
+            display: flex;
             gap: 20px;
         }
-        @media (max-width: 768px) {
-            .container {
-                grid-template-columns: 1fr;
-            }
-        }
-        .sidebar, .main-content {
-            background: #fff;
-            padding: 25px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
-        }
-        h2 {
-            color: #1e293b;
-            border-bottom: 2px solid #e2e8f0;
-            padding-bottom: 8px;
-            margin-top: 0;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        .project {
-            background-color: #f1f5f9;
-            padding: 20px;
-            border-left: 5px solid #3b82f6;
-            border-radius: 4px;
-            margin-bottom: 20px;
-        }
-        .project h3 {
-            margin-top: 0;
-            color: #2563eb;
-        }
-        .remedy-log {
-            background-color: #0f172a;
-            color: #38bdf8;
-            padding: 15px;
-            border-radius: 6px;
-            font-family: 'Courier New', Courier, monospace;
+
+        nav a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
             font-size: 0.95rem;
-            overflow-x: auto;
         }
-        .remedy-title {
-            font-weight: bold;
-            color: #64748b;
-            margin-bottom: 5px;
-            text-transform: uppercase;
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        nav a.active {
+            color: var(--text-main);
+            font-weight: 700;
+            pointer-events: none;
+        }
+
+        /* Header Layout */
+        header {
+            margin-bottom: 35px;
+            border-bottom: 1px dashed var(--border-color);
+            padding-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #111111;
+            margin: 0 0 10px 0;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        /* Content Sections */
+        .card {
+            background: #ffffff;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            margin-top: 0;
+            margin-bottom: 15px;
+            color: #111111;
+        }
+
+        p {
+            margin: 0 0 15px 0;
+            color: #3c4043;
+            font-size: 1.05rem;
+        }
+        
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Project Grid/List for Directory */
+        .project-directory {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .project-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            margin-bottom: 12px;
+            background-color: var(--bg-light);
+        }
+
+        .project-item a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .project-item a:hover {
+            text-decoration: underline;
+        }
+
+        .project-tag {
             font-size: 0.8rem;
+            background: #e8f0fe;
+            color: var(--primary);
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: 500;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Victor Donald</h1>
-        <p>Enterprise IT Help Desk & Remote Support Portfolio</p>
-   <section id="portfolio-navigation">
-    <h2>📂 Portfolio Directory</h2>
-    <ul>
-        <li><strong>Project 1:</strong> Remote IT Support & Lifecycle Management (Current Page)</li>
-        <li><strong>Project 2:</strong> <a href="index1.html">Enterprise Network Diagnostics & Infrastructure Support Simulation</a></li>
-        <li><strong>Project 3:</strong> <a href="index2.html">Enterprise Hardware Deployment & OS Specialization</a></li>
-    </ul>
-</section>
-    </header>
-
     <div class="container">
-        <!-- Sidebar: Core Technical Skills -->
-        <aside class="sidebar">
-            <h2>🛠️ Core Technical Skills</h2>
-            <ul>
-                <li><strong>Help Desk Ticketing Systems:</strong> Remedy (BMC Helix) Incident Management</li>
-                <li><strong>Operating Systems:</strong> Windows 10/11 Enterprise, OS Deployment & Image Recovery</li>
-                <li><strong>Networking:</strong> TCP/IP Stack, DNS, DHCP, LAN Connectivity</li>
-                <li><strong>Command-Line Tools:</strong> <code>ipconfig</code>, <code>ping</code>, <code>traceroute</code></li>
-            </ul>
-        </aside>
+        <!-- Top Unified Navigation Bar -->
+        <nav>
+            <span style="font-weight: 700; font-size: 1.1rem; color: #111111;">IT Portfolio</span>
+            <div class="nav-links">
+                <a href="index.html" class="active">Project 1</a>
+                <a href="index1.html">Project 2</a>
+                <a href="index2.html">Project 3</a>
+            </div>
+        </nav>
 
-        <!-- Main Content: Project 1 Only -->
-        <main class="main-content">
-            <h2>📋 Featured Project & Workflow Simulation</h2>
-            
-            <div class="project">
-                <h3>Remote IT Support & Lifecycle Management (DeVry University Simulation)</h3>
-                <p><strong>Scenario:</strong> A remote user at a regional Virginia campus location experienced a persistent boot loop due to a corrupted system update, breaching standard operations.</p>
-                <p><strong>Triage & Resolution:</strong> Logged and prioritized the ticket in Remedy. Remotely isolated the BCD corruption and guided the user through an authenticated network boot environment to successfully deploy a clean, DeVry-validated system recovery image.</p>
+        <header>
+            <h1>Project 1: Remote IT Support & Lifecycle Management</h1>
+            <p class="subtitle">Enterprise Technical Infrastructure & Systems Engineering</p>
+        </header>
+
+        <main>
+            <!-- Core Project Content Card -->
+            <section class="card">
+                <h2>Technical Execution & Overview</h2>
+                <p>Managed remote deployment, hardware lifecycle support, and secure workstation configurations across distributed enterprise environments. Structured core optimization frameworks to streamline system stability and user accessibility.</p>
+            </section>
+
+            <!-- Portfolio Directory Linking to Index1 and Index2 -->
+            <section class="card" style="margin-top: 40px; border-top: 3px solid var(--primary);">
+                <h2>📂 Portfolio Directory</h2>
+                <p style="color: var(--text-muted); margin-bottom: 20px;">Navigate through the documented case studies and technical simulations within this infrastructure portfolio:</p>
                 
-                <div class="remedy-title">Remedy Closure Entry:</div>
-                <div class="remedy-log">
-                    "Status: Closed. Root Cause: OS/Software corruption post-update. Resolution: Initiated secure network boot, successfully deployed DeVry-validated recovery image, and repaired BCD integrity. Verified remote domain connectivity. Completed within 45-minute SLA milestone."
-                </div>
-            </div>
-       <!-- Link to the next project page -->
-            <div style="text-align: right; margin-top: 30px; border-top: 2px solid #e2e8f0; padding-top: 15px;">
-                <a href="index1.html" style="color: #2563eb; font-weight: bold; text-decoration: none; font-size: 1.1rem;">View Next Project: Network Diagnostics &rarr;</a>
-            </div>
-        </main>
+                <ul class="project-directory">
+                    <li class="project-item">
+                        <span><strong>Project 1:</strong> Remote Support & Lifecycle Management</span>
+                        <span class="project-tag" style="background:#dadce0; color:#3c4043;">Current Page</span>
+                    </li>
+                    <li class="project-item">
+                        <span><strong>Project 2:</strong> Network Diagnostics Simulation</span>
+                        <a href="index1.html">View Project 2 &rarr;</a>
+                    </li>
+                    <li class="project-item">
+                        <span><strong>Project 3:</strong> Hardware Deployment & OS Specialization</span>
+                        <a href="index2.html">View Project 3 &rarr;</a>
+                    </li>
+                </ul>
+            </section>
         </main>
     </div>
-<nav class="portfolio-nav" style="margin-bottom: 20px; padding: 10px; background-color: #f4f4f4; border-radius: 5px;">
-    <a href="index.html" style="margin-right: 15px; font-weight: bold; text-decoration: none; color: #333;">Home / Main Portfolio</a> | 
-    <a href="index1.html" style="margin-right: 15px; margin-left: 15px; text-decoration: none; color: #0066cc;">Project 1 Case Study</a> | 
-    <a href="index2.html" style="margin-left: 15px; text-decoration: none; color: #0066cc;">Project 2 Case Study</a>
-</nav>
+
 </body>
 </html>
