@@ -3,97 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Victor Donald | Network Diagnostics Portfolio</title>
+    <title>Project 2: Enterprise Network Diagnostics & Infrastructure Support Simulation</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f8f9fa;
-        }
-        header {
-            background-color: #1e293b;
-            color: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-        header p {
-            margin: 10px 0 0;
-            font-size: 1.2rem;
-            color: #cbd5e1;
-        }
-        .container {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 20px;
-        }
-        @media (max-width: 768px) {
-            .container {
-                grid-template-columns: 1fr;
-            }
-        }
-        .sidebar, .main-content {
-            background: #fff;
-            padding: 25px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
-        }
-        h2 {
-            color: #1e293b;
-            border-bottom: 2px solid #e2e8f0;
-            padding-bottom: 8px;
-            margin-top: 0;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        .project {
-            background-color: #f8fafc;
-            padding: 20px;
-            border-left: 5px solid #10b981;
-            border-radius: 4px;
-            margin-bottom: 20px;
-        }
-   <!-- Main Content Column -->
-    <main class="main-content" style="background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-        <h2 style="color: #1e293b; margin-top: 0; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px;">
-            🚀 Project 1 Case Study: Remote OS Recovery & Login Restoration
-        </h2>
-        
-        <div class="project-section" style="margin-bottom: 25px;">
-            <h3 style="color: #0f766e; margin-bottom: 8px;">Technical Execution</h3>
-            <p style="margin: 0; color: #475569; line-height: 1.6;">
-                Diagnosed and resolved critical authentication and domain login constraints for a remote user utilizing Remedy (BMC Helix) and enterprise remote desktop tools. Resolved post-update OS corruption by initiating a secure network boot, deploying an organization-validated master image, and repairing Boot Configuration Data (BCD) integrity.
-            </p>
-        </div>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; line-height: 1.6; color: #24292e; max-width: 800px; margin: 40px auto; padding: 0 20px; }
+        h1, h2, h3 { color: #0366d6; border-bottom: 1px solid #eaecef; padding-bottom: 0.3em; }
+        .meta { color: #586069; font-style: italic; margin-bottom: 20px; }
+        .section { margin-bottom: 25px; }
+        .btn { display: inline-block; background-color: #0366d6; color: white; padding: 10px 15px; text-decoration: none; border-radius: 5px; font-weight: bold; }
+        .btn:hover { background-color: #0056b3; }
+        nav { margin-bottom: 30px; }
+        nav a { margin-right: 15px; color: #0366d6; text-decoration: none; }
+        nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
 
-        <div class="project-section" style="margin-bottom: 25px;">
-            <h3 style="color: #0f766e; margin-bottom: 8px;">Business Value & Outcome</h3>
-            <p style="margin: 0; color: #475569; line-height: 1.6;">
-                Successfully minimized end-user operational downtime during a critical business window and verified full remote domain connectivity to close the ticket within a strict 45-minute SLA milestone.
-            </p>
-        </div>
-    </main>
-</div> <!-- Closes the .container div -->
+    <nav>
+        <a href="index.html">← Back to Project 1</a> | 
+        <a href="index2.html">Go to Project 3 →</a>
+    </nav>
 
-<!-- Navigation Menu Links -->
-<nav class="portfolio-nav" style="margin: 30px auto; max-width: 1100px; padding: 15px; background-color: #e2e8f0; border-radius: 8px; text-align: center;">
-    <a href="index.html" style="margin-right: 15px; text-decoration: none; color: #0284c7; font-weight: 500;">← Home / Main Portfolio</a> | 
-    <a href="index1.html" style="margin-right: 15px; margin-left: 15px; font-weight: bold; text-decoration: none; color: #1e293b;">Project 1 Case Study</a> | 
-    <a href="index2.html" style="margin-left: 15px; text-decoration: none; color: #0284c7; font-weight: 500;">Project 2 Case Study →</a>
-</nav>
+    <h1>Project 2: Enterprise Network Diagnostics & Infrastructure Support Simulation</h1>
+    <p class="meta">DeVry University Campus | October 2010 - December 2012</p>
+
+    <div class="section">
+        <h2>🛠️ Technical Execution</h2>
+        <p>Fielded a critical help request regarding a total loss of intranet and database access. Utilized advanced command-line interface (CLI) diagnostics (<code>ipconfig /all</code>) to identify an autoconfigured APIPA address (169.254.x.x). Coordinated an immediate switch port reset with infrastructure teams and executed an IP release/renew cycle to bind the client device to a valid dynamic subnet.</p>
+    </div>
+
+    <div class="section">
+        <h2>📈 Business Value & Outcome</h2>
+        <p>Restored critical administrative and student registration workflows, preventing extended operational disruptions. Confirmed physical NIC functionality via loopback testing and verified secure database access while successfully meeting all SLA compliance metrics.</p>
+    </div>
+
+    <div class="section">
+        <h2>📂 Supporting Evidence</h2>
+        <p>Network topology maps and detailed closure entries can be viewed at the main repository page:</p>
+        <p><a href="https://victor-donald.github.io/IT-Portfolio/" class="btn">View Project 2 Case Studies</a></p>
+    </div>
 
 </body>
 </html>
