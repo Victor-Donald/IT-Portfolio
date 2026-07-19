@@ -27,6 +27,20 @@ Want to see how I translate technical knowledge into seamless end-user resolutio
 * **Triage & Resolution:** Logged and prioritized the ticket in Remedy. Remotely isolated the BCD corruption and guided the user through an authenticated network boot environment to successfully deploy a clean, DeVry-validated system recovery image. 
 * **Remedy Closure Entry:** 
   > `"Status: Closed. Root Cause: OS/Software corruption post-update. Resolution: Initiated secure network boot, successfully deployed DeVry-validated recovery image, and repaired BCD integrity. Verified remote domain connectivity. Completed within 45-minute SLA milestone."`
+  > **PC Hardware Optimization & Storage Upgrade**
+
+Performed physical hardware maintenance and internal component upgrades on mobile computing devices, including safely unseating and replacing internal solid-state drives (SSDs).
+
+Managed disk partitioning, drive alignment verification, and storage optimization to ensure system stability and peak data performance.
+
+Utilized specialized precision toolkits to safely disassemble, repair, and reassemble complex electronic devices without damaging internal chassis components.
+**Operating System Deployment & Firmware Recovery**
+
+Executed clean operating system reinstalls and configured custom local user accounts on refurbished tablet devices.
+
+Diagnosed and resolved system driver conflicts, manually deploying and updating firmware to ensure hardware compatibility with peripheral devices like Bluetooth keyboards.
+
+Troubleshot seized hardware and internal cooling systems, managing motherboard and heatsink assemblies to resolve thermal throttling and hardware faults.
 
 ### 2. Enterprise Network Diagnostics & Support Simulation
 * **Scenario:** A campus staff member lost access to the local intranet and student registration databases, disrupting administrative workflows.
