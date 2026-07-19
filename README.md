@@ -27,7 +27,9 @@ Want to see how I translate technical knowledge into seamless end-user resolutio
 * **Triage & Resolution:** Logged and prioritized the ticket in Remedy. Remotely isolated the BCD corruption and guided the user through an authenticated network boot environment to successfully deploy a clean, DeVry-validated system recovery image. 
 * **Remedy Closure Entry:** 
   > `"Status: Closed. Root Cause: OS/Software corruption post-update. Resolution: Initiated secure network boot, successfully deployed DeVry-validated recovery image, and repaired BCD integrity. Verified remote domain connectivity. Completed within 45-minute SLA milestone."`
-  > **PC Hardware Optimization & Storage Upgrade**
+  
+  
+  **PC Hardware Optimization & Storage Upgrade**
 
 Performed physical hardware maintenance and internal component upgrades on mobile computing devices, including safely unseating and replacing internal solid-state drives (SSDs).
 
