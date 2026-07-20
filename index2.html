@@ -4,50 +4,170 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 3: Enterprise Hardware Deployment & OS Specialization</title>
+
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; line-height: 1.6; color: #24292e; max-width: 800px; margin: 40px auto; padding: 0 20px; }
-        h1, h2, h3 { color: #0366d6; border-bottom: 1px solid #eaecef; padding-bottom: 0.3em; }
-        .meta { color: #586069; font-style: italic; margin-bottom: 20px; }
-        .section { margin-bottom: 25px; }
-        nav { margin-bottom: 30px; }
-        nav a { margin-right: 15px; color: #0366d6; text-decoration: none; }
-        nav a:hover { text-decoration: underline; }
+        :root {
+            --primary: #1a73e8;
+            --primary-hover: #1557b0;
+            --text-main: #202124;
+            --text-muted: #5f6368;
+            --bg-light: #f8f9fa;
+            --border-color: #dadce0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 15px;
+            margin-bottom: 40px;
+        }
+
+        nav .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        nav a.active {
+            color: var(--text-main);
+            font-weight: 700;
+            pointer-events: none;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 35px;
+            border-bottom: 1px dashed var(--border-color);
+            padding-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin: 0 0 10px 0;
+            color: #111;
+        }
+
+        .subtitle {
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        /* Card Layout */
+        .card {
+            background: #ffffff;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            margin-top: 0;
+            margin-bottom: 15px;
+            color: #111;
+        }
+
+        p {
+            margin: 0 0 15px 0;
+            color: #3c4043;
+            font-size: 1.05rem;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
     </style>
 </head>
+
 <body>
 
+<div class="container">
+
+    <!-- Navigation -->
     <nav>
-        <a href="index1.html">← Back to Project 2</a> | 
-        <a href="index.html">Back to Main (Project 1)</a>
+        <span style="font-weight:700; font-size:1.1rem;">IT Portfolio</span>
+        <div class="nav-links">
+            <a href="index.html">Project 1</a>
+            <a href="index1.html">Project 2</a>
+            <a href="index2.html" class="active">Project 3</a>
+            <a href="hardware-optimization.html">Hardware Optimization</a>
+            <a href="os-firmware-recovery.html">OS & Firmware Recovery</a>
+        </div>
     </nav>
 
-    <h1>Project 3: Enterprise Hardware Deployment & OS Specialization</h1>
-    <p class="meta">Timeline: June 2025 – Present</p>
+    <!-- Header -->
+    <header>
+        <h1>Project 3: Enterprise Hardware Deployment & OS Specialization</h1>
+        <p class="subtitle">Timeline: June 2025 – Present</p>
+    </header>
 
-    <div class="section">
+    <!-- Technical Execution -->
+    <section class="card">
         <h2>🛠️ Technical Execution</h2>
-        <p>Architected a standardized deployment framework to transition a diverse hardware fleet from generic Windows 11 environments to optimized local configurations. Successfully deployed tailored Surface Recovery Images for specialized endpoints, including Surface Pro 7+ and Surface Go 2 tablets, as well as enterprise-grade HP and Lenovo desktop systems.</p>
-    </div>
+        <p>Architected a standardized deployment framework to transition a diverse hardware fleet from generic Windows 11 environments to optimized local configurations.</p>
+        <p>Successfully deployed tailored Surface Recovery Images for specialized endpoints, including Surface Pro 7+, Surface Go 2 tablets, and enterprise-grade HP and Lenovo desktop systems.</p>
+    </section>
 
-    <div class="section">
+    <!-- Driver Injection -->
+    <section class="card">
         <h2>⚙️ Driver Injection & OS Modification</h2>
-        <p>Built and deployed custom bootable media using advanced command-line and imaging tools. Dynamically injected device-specific hardware drivers into master deployment files, ensuring 100% out-of-the-box compatibility for peripheral chipsets, network interface cards (NICs), and integrated touch sensors.</p>
-    </div>
+        <p>Built and deployed custom bootable media using advanced command-line and imaging tools. Dynamically injected device-specific hardware drivers into master deployment files, ensuring 100% out-of-the-box compatibility for peripheral chipsets, NICs, and integrated touch sensors.</p>
+    </section>
 
-    <div class="section">
+    <!-- Storage Provisioning -->
+    <section class="card">
         <h2>💾 Storage Provisioning & Media Management</h2>
-        <p>Engineered high-capacity storage deployment media, implementing file-system formatting protocols across 2TB Western Digital My Passport and 1TB Buffalo external drives. Configured fully optimized, secure bootable drives to support offline local user setups and rapid system recovery.</p>
-    </div>
+        <p>Engineered high-capacity storage deployment media, implementing file-system formatting protocols across 2TB Western Digital My Passport and 1TB Buffalo external drives.</p>
+        <p>Configured secure, optimized bootable drives to support offline local user setups and rapid system recovery.</p>
+    </section>
 
-    <div class="section">
+    <!-- Business Value -->
+    <section class="card">
         <h2>📈 Business Value & Outcome</h2>
-        <p>Eliminated dependency on active internet connections during deployment, reduced terminal provisioning times, and established a scalable, cross-platform disaster recovery baseline across multiple hardware architectures.</p>
-    </div>
- <!-- Technical Projects Section -->
-<section class="technical-projects">
-  <h2>Technical Projects</h2>
+        <p>Eliminated dependency on active internet connections during deployment, reduced provisioning times, and established a scalable, cross-platform disaster recovery baseline across multiple hardware architectures.</p>
+    </section>
 
-  
+    <!-- Footer -->
+    <footer>
+        © 2026 Victor Donald — IT Help Desk & Remote Support Specialist
+    </footer>
+
+</div>
 
 </body>
 </html>
