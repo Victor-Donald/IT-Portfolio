@@ -1,173 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 3: Enterprise Hardware Deployment & OS Specialization</title>
-
-    <style>
-        :root {
-            --primary: #1a73e8;
-            --primary-hover: #1557b0;
-            --text-main: #202124;
-            --text-muted: #5f6368;
-            --bg-light: #f8f9fa;
-            --border-color: #dadce0;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: var(--text-main);
-            background-color: #ffffff;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            max-width: 850px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        /* Navigation */
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 15px;
-            margin-bottom: 40px;
-        }
-
-        nav .nav-links {
-            display: flex;
-            gap: 20px;
-        }
-
-        nav a {
-            color: var(--primary);
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.95rem;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        nav a.active {
-            color: var(--text-main);
-            font-weight: 700;
-            pointer-events: none;
-        }
-
-        /* Header */
-        header {
-            margin-bottom: 35px;
-            border-bottom: 1px dashed var(--border-color);
-            padding-bottom: 25px;
-        }
-
-        h1 {
-            font-size: 2rem;
-            margin: 0 0 10px 0;
-            color: #111;
-        }
-
-        .subtitle {
-            font-size: 1.05rem;
-            color: var(--text-muted);
-            margin: 0;
-        }
-
-        /* Card Layout */
-        .card {
-            background: #ffffff;
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 24px;
-            margin-bottom: 24px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-        }
-
-        h2 {
-            font-size: 1.3rem;
-            margin-top: 0;
-            margin-bottom: 15px;
-            color: #111;
-        }
-
-        p {
-            margin: 0 0 15px 0;
-            color: #3c4043;
-            font-size: 1.05rem;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 50px;
-            padding: 20px;
-            color: var(--text-muted);
-            font-size: 0.9rem;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <title>Enterprise Hardware Deployment & OS Specialization | Victor Donald</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-
-<div class="container">
-
-    <!-- Navigation -->
-    <nav>
-        <span style="font-weight:700; font-size:1.1rem;">IT Portfolio</span>
-        <div class="nav-links">
-            <a href="index.html">Project 1</a>
-            <a href="index1.html">Project 2</a>
-            <a href="index2.html" class="active">Project 3</a>
-            <a href="hardware-optimization.html">Hardware Optimization</a>
-            <a href="os-firmware-recovery.html">OS & Firmware Recovery</a>
+  <div class="detail-layout">
+    <header class="header">
+      <div class="brand">
+        <div class="brand-name">Victor Donald</div>
+        <div class="brand-role">IT Help Desk Technician</div>
+        <div class="brand-tags">
+          OS Deployment · Driver Injection · Bootable Media
         </div>
-    </nav>
-
-    <!-- Header -->
-    <header>
-        <h1>Project 3: Enterprise Hardware Deployment & OS Specialization</h1>
-        <p class="subtitle">Timeline: June 2025 – Present</p>
+        <div class="contact-strip">
+          <span>Washington, DC</span>
+          <span><a href="index.html">Back to Overview</a></span>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Overview</a>
+        <a href="index1.html">Network Diagnostics</a>
+        <a href="index2.html">Hardware Deployment & OS</a>
+        <a href="hardware-optimization.html">PC Optimization</a>
+        <a href="os-firmware-recovery.html">OS & Firmware Recovery</a>
+      </nav>
     </header>
 
-    <!-- Technical Execution -->
-    <section class="card">
-        <h2>🛠️ Technical Execution</h2>
-        <p>Architected a standardized deployment framework to transition a diverse hardware fleet from generic Windows 11 environments to optimized local configurations.</p>
-        <p>Successfully deployed tailored Surface Recovery Images for specialized endpoints, including Surface Pro 7+, Surface Go 2 tablets, and enterprise-grade HP and Lenovo desktop systems.</p>
-    </section>
+    <main>
+      <section class="detail-header">
+        <div class="detail-title">Enterprise Hardware Deployment & OS Specialization</div>
+        <div class="detail-subtitle">
+          Transitioning a diverse hardware fleet from generic Windows 11 builds to optimized enterprise configurations.
+        </div>
+        <div class="detail-meta">
+          <span class="badge">Windows 11</span>
+          <span class="badge">Driver Injection</span>
+          <span class="badge">Bootable Media</span>
+          <span class="badge badge-accent">Disaster Recovery Baseline</span>
+        </div>
+      </section>
 
-    <!-- Driver Injection -->
-    <section class="card">
-        <h2>⚙️ Driver Injection & OS Modification</h2>
-        <p>Built and deployed custom bootable media using advanced command-line and imaging tools. Dynamically injected device-specific hardware drivers into master deployment files, ensuring 100% out-of-the-box compatibility for peripheral chipsets, NICs, and integrated touch sensors.</p>
-    </section>
+      <section class="detail-section">
+        <h2>Overview</h2>
+        <p>
+          This project focused on modernizing device provisioning across Surface, HP, and Lenovo hardware
+          by replacing generic Windows 11 environments with locally optimized enterprise configurations.
+          The goal was to reduce provisioning time, eliminate internet dependencies, and establish a
+          consistent disaster recovery baseline.
+        </p>
+      </section>
 
-    <!-- Storage Provisioning -->
-    <section class="card">
-        <h2>💾 Storage Provisioning & Media Management</h2>
-        <p>Engineered high-capacity storage deployment media, implementing file-system formatting protocols across 2TB Western Digital My Passport and 1TB Buffalo external drives.</p>
-        <p>Configured secure, optimized bootable drives to support offline local user setups and rapid system recovery.</p>
-    </section>
+      <section class="detail-section">
+        <h2>Technical Objectives</h2>
+        <ul>
+          <li>Build custom bootable media that does not rely on active internet connectivity.</li>
+          <li>Inject device-specific hardware drivers into master deployment images.</li>
+          <li>Standardize OS configurations across multiple hardware vendors.</li>
+          <li>Establish a repeatable cross-platform disaster recovery workflow.</li>
+        </ul>
+      </section>
 
-    <!-- Business Value -->
-    <section class="card">
-        <h2>📈 Business Value & Outcome</h2>
-        <p>Eliminated dependency on active internet connections during deployment, reduced provisioning times, and established a scalable, cross-platform disaster recovery baseline across multiple hardware architectures.</p>
-    </section>
+      <section class="detail-section">
+        <h2>Execution</h2>
+        <p>
+          I used command line tools to construct custom bootable media tailored for Surface, HP, and Lenovo
+          devices. This included injecting hardware-specific drivers directly into master deployment files
+          so that devices could be provisioned without downloading drivers during setup.
+        </p>
+        <p>
+          Storage provisioning and OS specialization settings were configured to align with enterprise
+          standards, ensuring consistent performance and security across the fleet. I validated deployments
+          by testing the images on multiple device models and confirming that all critical drivers and
+          services were available immediately after installation.
+        </p>
+      </section>
 
-    <!-- Footer -->
-    <footer>
-        © 2026 Victor Donald — IT Help Desk & Remote Support Specialist
-    </footer>
+      <section class="detail-section">
+        <h2>Outcome</h2>
+        <ul>
+          <li>Eliminated active internet dependencies during OS deployment.</li>
+          <li>Reduced device provisioning times by streamlining driver availability.</li>
+          <li>Improved reliability and consistency across Surface, HP, and Lenovo hardware.</li>
+          <li>Established a cross-platform disaster recovery baseline using standardized images.</li>
+        </ul>
+      </section>
 
-</div>
+      <section class="detail-section">
+        <h2>Skills Demonstrated</h2>
+        <div class="detail-skills">
+          <span class="badge">Driver Injection</span>
+          <span class="badge">Bootable Media Creation</span>
+          <span class="badge">OS Specialization</span>
+          <span class="badge">Storage Provisioning</span>
+          <span class="badge badge-accent">CLI Automation</span>
+        </div>
+      </section>
 
+      <section class="detail-section">
+        <h2>Related Experience</h2>
+        <p>
+          In my PC Hardware Optimization project, I performed SSD replacements, disk partitioning,
+          and storage optimization to improve responsiveness and reliability across multiple endpoints,
+          complementing this deployment-focused work with hands-on hardware tuning.
+        </p>
+      </section>
+
+      <footer class="detail-footer">
+        <span>Part of enterprise deployment and recovery portfolio.</span>
+        <span><a href="index.html">← Back to Portfolio Home</a></span>
+      </footer>
+    </main>
+  </div>
 </body>
 </html>
