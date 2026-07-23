@@ -58,52 +58,37 @@
         </div>
       </section>
 
-      <section class="detail-section">
-        <h2>Overview</h2>
-        <p>
-          This project was executed within a simulated university environment to diagnose and resolve
-          network connectivity failures impacting administrative and student registration systems.
-          The goal was to restore reliable access to critical services while maintaining strict SLA requirements.
-        </p>
-      </section>
+ <!-- Enterprise Network Diagnostics & Infrastructure Support -->
+<section class="detail-section">
+  <h2>Project Overview</h2>
+  <p>
+    Engineered structured troubleshooting workflows to diagnose and resolve layer 1–3 network connectivity failures across enterprise endpoint environments. Leveraged command-line tools (<code>ipconfig</code>, <code>ping</code>, <code>traceroute</code>) to resolve DHCP lease failures, APIPA auto-configuration errors, and localized port drops, restoring domain connectivity and access to critical organizational databases.
+  </p>
+</section>
 
-      <section class="detail-section">
-        <h2>Technical Objectives</h2>
-        <ul>
-          <li>Identify root causes of DHCP assignment failures and APIPA address issues.</li>
-          <li>Restore network connectivity for affected endpoints under tight SLA guidelines.</li>
-          <li>Verify secure database access and network stability through loopback testing.</li>
-          <li>Document diagnostic steps to support repeatable troubleshooting workflows.</li>
-        </ul>
-      </section>
+<section class="detail-section">
+  <h2>Business Value</h2>
+  <ul>
+    <li>
+      <strong>SLA Compliance & Downtime Reduction:</strong> Reduced Mean Time to Resolution (MTTR) by establishing systematic CLI troubleshooting workflows for network outages.
+    </li>
+    <li>
+      <strong>Business Continuity:</strong> Swiftly restored access to local intranet resources and administrative databases, preventing operational disruptions for end users.
+    </li>
+    <li>
+      <strong>Infrastructure Stability:</strong> Identified underlying switch port issues and misconfigurations before they escalated into broader network outages.
+    </li>
+  </ul>
+</section>
 
-      <section class="detail-section">
-        <h2>Execution</h2>
-        <p>
-          I used CLI tools, specifically <code>ipconfig</code>, to analyze DHCP leases and detect endpoints
-          that had fallen back to APIPA addresses. This allowed me to quickly isolate misconfigured or
-          non-responsive DHCP services.
-        </p>
-        <p>
-          After identifying the issue, I coordinated with the infrastructure team to perform targeted
-          switch port resets and configuration checks. I then validated connectivity using local loopback
-          tests to ensure that endpoints could securely reach database systems and application servers.
-        </p>
-        <p>
-          All steps were documented to create a clear troubleshooting path that could be reused for
-          future incidents, supporting SLA compliance and faster resolution times.
-        </p>
-      </section>
-
-      <section class="detail-section">
-        <h2>Outcome</h2>
-        <ul>
-          <li>Restored full network connectivity for impacted administrative and student endpoints.</li>
-          <li>Verified secure database access via loopback testing and connectivity checks.</li>
-          <li>Maintained SLA compliance through rapid diagnosis and remediation.</li>
-          <li>Established a repeatable diagnostic workflow for DHCP and APIPA-related issues.</li>
-        </ul>
-      </section>
+<section class="detail-section">
+  <h2>Outcome & Business Impact</h2>
+  <ul>
+    <li><strong>Rapid Network Remediation:</strong> Successfully resolved APIPA address binding conflicts (169.254.x.x) and bound endpoints to valid dynamic subnets.</li>
+    <li><strong>Minimized Ticket Escalations:</strong> Solved complex connectivity issues at the local level without unnecessary escalation to Tier-3 engineering teams.</li>
+    <li><strong>SLA Milestones Met:</strong> Consistently met or exceeded 45-minute incident resolution SLAs for critical administrative staff and users.</li>
+  </ul>
+</section>
 
       <section class="detail-section">
         <h2>Skills Demonstrated</h2>
