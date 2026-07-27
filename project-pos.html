@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POS ActiveNet System Administration & Asset Tracking | Victor Donald</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --bg-slate: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --border: #e2e8f0;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; }
+        body { background-color: var(--bg-slate); color: var(--text-main); line-height: 1.6; padding: 20px; }
+        .container { max-width: 900px; margin: 40px auto; }
+        .back-btn { display: inline-flex; align-items: center; text-decoration: none; color: var(--primary); font-weight: 600; margin-bottom: 24px; }
+        .back-btn:hover { text-decoration: underline; }
+        .card { background: var(--card-bg); border-radius: 12px; border: 1px solid var(--border); padding: 36px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); }
+        .badge { background: #dbeafe; color: var(--primary-dark); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; display: inline-block; margin-bottom: 12px; }
+        h1 { font-size: 2rem; margin-bottom: 12px; color: var(--text-main); }
+        .meta { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 24px; border-bottom: 1px solid var(--border); padding-bottom: 16px; }
+        .section-title { font-size: 1.25rem; font-weight: 700; color: var(--text-main); margin: 28px 0 12px 0; }
+        .grid-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin: 20px 0; }
+        .stat-card { background: #f1f5f9; padding: 16px; border-radius: 8px; text-align: center; border-left: 4px solid var(--primary); }
+        .stat-number { font-size: 1.8rem; font-weight: 800; color: var(--primary-dark); }
+        .stat-label { font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; font-weight: 600; }
+        ul { list-style-type: none; }
+        li { position: relative; padding-left: 24px; margin-bottom: 12px; color: var(--text-muted); }
+        li::before { content: "✓"; position: absolute; left: 0; color: var(--primary); font-weight: bold; }
+        .pills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+        .pill { background: #f1f5f9; color: var(--text-main); font-size: 0.85rem; padding: 6px 14px; border-radius: 6px; border: 1px solid var(--border); font-weight: 500; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="projects.html" class="back-btn">← Back to Portfolio</a>
+    
+    <div class="card">
+        <span class="badge">POS Administration & Hardware Asset Management</span>
+        <h1>POS ActiveNet System Administration & Asset Tracking</h1>
+        <div class="meta"><strong>Organization:</strong> The George Washington University | <strong>Focus:</strong> ActiveNet POS, Inventory Accountability & First-Contact Resolution</div>
+
+        <div class="grid-stats">
+            <div class="stat-card">
+                <div class="stat-number">300+</div>
+                <div class="stat-label">IT Assets Tracked</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Inventory Accuracy</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">85%+</div>
+                <div class="stat-label">First-Contact Resolution</div>
+            </div>
+        </div>
+
+        <div class="section-title">Project Business Value</div>
+        <p style="color: var(--text-muted);">Centralized campus hardware asset tracking and managed administrative operations for Point-of-Sale (POS) ActiveNet software, reducing inventory loss and ensuring rapid technical support response across high-volume facilities.</p>
+
+        <div class="section-title">Key Technical Accomplishments</div>
+        <ul>
+            <li><strong>POS ActiveNet Administration:</strong> Administered ActiveNet software, managing role-based user access provisioning, point-of-sale terminal configurations, and daily financial reporting.</li>
+            <li><strong>Hardware Lifecycle Management:</strong> Managed complete lifecycle tracking, hardware maintenance, and audit compliance for 300+ physical IT assets across multiple facility centers.</li>
+            <li><strong>Technical Onboarding & Support:</strong> Trained 20+ staff members on POS navigation, software troubleshooting protocols, and operational workflows.</li>
+            <li><strong>High-Volume Incident Resolution:</strong> Delivered front-line technical troubleshooting for facility hardware and software inquiries, maintaining an 85%+ First-Contact Resolution (FCR) rate.</li>
+        </ul>
+
+        <div class="section-title">Core Competencies & Technologies Used</div>
+        <div class="pills">
+            <span class="pill">ActiveNet POS Software</span>
+            <span class="pill">Hardware Lifecycle Management</span>
+            <span class="pill">Asset Tracking Audits</span>
+            <span class="pill">User Role Provisioning</span>
+            <span class="pill">Staff Technical Onboarding</span>
+            <span class="pill">First-Contact Resolution (FCR)</span>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
