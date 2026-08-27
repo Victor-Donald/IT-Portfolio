@@ -1,133 +1,718 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <title>OS & Firmware Recovery & Device Restoration | Victor Donald</title>
-  <link rel="stylesheet" href="style.css" />
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        OS &amp; Firmware Recovery | Victor Donald
+    </title>
+
+    <meta name="description"
+          content="Hands-on Windows operating system and firmware recovery project demonstrating BIOS/UEFI troubleshooting, DISM, SFC, boot recovery, recovery media, and endpoint restoration.">
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
-<body>
-  <nav style="background:#1a1a1a; padding:15px; font-family:Arial;">
-  <a href="index.html" style="color:white; margin-right:20px; text-decoration:none;">Home</a>
-  <a href="resume.html" style="color:white; margin-right:20px; text-decoration:none;">Resume</a>
-    <a href="resumeV2.html" style="color:white; margin-right:20px; text-decoration:none;">Resume V2</a>
 
-  <a href="hardware-optimization.html" style="color:white; margin-right:20px; text-decoration:none;">Hardware Optimization</a>
-  <a href="os-firmware-recovery.html" style="color:white; margin-right:20px; text-decoration:none;">OS & Firmware Recovery</a>
-  <a href="contact.html" style="color:white; text-decoration:none;">Contact</a>
-</nav>
+
 <body>
 
 
+<header class="site-header">
 
+    <div class="container nav-container">
 
-  <div class="detail-layout">
-    <header class="header">
-      <div class="brand">
-        <div class="brand-name">Victor Donald</div>
-        <div class="brand-role">IT Help Desk Technician</div>
-        <div class="brand-tags">
-          Firmware Recovery · OS Repair · Boot Troubleshooting
+        <div class="brand">
+
+            <a href="index.html">
+                Victor Donald
+            </a>
+
+            <span>
+                IT Support &amp; Technical Portfolio
+            </span>
+
         </div>
-        <div class="contact-strip">
-          <span>Washington, DC</span>
-          <span><a href="index.html">Back to Overview</a></span>
-        </div>
-      </div>
-      <nav class="nav">
-        <a href="resume.html">Resume</a>
 
-        <a href="index.html">Overview</a>
-  <a href="enterprise-deployment.html">Enterprise Deployment</a>
-<a href="enterprise-network.html">Enterprise Network</a>
-        <a href="hardware-optimization.html">PC Optimization</a>
-        <a href="os-firmware-recovery.html">OS & Firmware Recovery</a>
-      </nav>
-    </header>
 
-    <main>
-      <section class="detail-header">
-        <div class="detail-title">OS & Firmware Recovery & Device Restoration</div>
-        <div class="detail-subtitle">
-          Recovering non-functional systems through firmware resets, OS repair utilities, and boot configuration fixes.
-        </div>
-        <div class="detail-meta">
-          <span class="badge">BIOS/UEFI</span>
-          <span class="badge">DISM</span>
-          <span class="badge">SFC</span>
-          <span class="badge">bootrec</span>
-          <span class="badge badge-accent">Device Restoration</span>
-        </div>
-      </section>
+        <nav aria-label="Main navigation">
 
-      <section class="detail-section">
-        <h2>Overview</h2>
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="projects.html">
+                Projects
+            </a>
+
+            <a href="resume.html">
+                Resume
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+            <a href="https://victor-donald.github.io/IT-Home-Labs/">
+                Home Labs
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<main>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="container hero-content">
+
+            <p class="eyebrow">
+                TECHNICAL PROJECT • WINDOWS RECOVERY • SYSTEM TROUBLESHOOTING
+            </p>
+
+
+            <h1>
+                OS &amp; Firmware Recovery<br>
+                &amp; Device Restoration
+            </h1>
+
+
+            <p class="hero-text">
+                Hands-on recovery project demonstrating BIOS/UEFI
+                troubleshooting, Windows system-file repair, boot
+                configuration recovery, recovery media, and endpoint
+                validation.
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a class="button primary"
+                   href="#overview">
+                    Explore Project
+                </a>
+
+
+                <a class="button secondary"
+                   href="index.html">
+                    ← Back to Portfolio
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- OVERVIEW -->
+
+    <section id="overview" class="section">
+
+        <div class="container narrow">
+
+            <p class="section-label">
+                PROJECT OVERVIEW
+            </p>
+
+
+            <h2>
+                Windows &amp; Endpoint Recovery
+            </h2>
+
+
+            <p>
+                This project focuses on recovering Windows endpoints
+                experiencing boot problems, firmware configuration
+                issues, or operating-system file corruption.
+            </p>
+
+
+            <p>
+                The recovery process combined BIOS/UEFI configuration,
+                Windows recovery utilities, boot troubleshooting,
+                recovery media, and post-recovery validation.
+            </p>
+
+
+            <p>
+                The goal was to restore endpoint functionality through
+                structured troubleshooting before considering hardware
+                replacement.
+            </p>
+
+
+            <div class="tags">
+
+                <span>BIOS/UEFI</span>
+
+                <span>Windows Recovery</span>
+
+                <span>DISM</span>
+
+                <span>SFC</span>
+
+                <span>bootrec</span>
+
+                <span>Boot Troubleshooting</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- OBJECTIVES -->
+
+    <section class="section labs-section">
+
+        <div class="container">
+
+            <p class="section-label">
+                TECHNICAL OBJECTIVES
+            </p>
+
+
+            <h2>
+                Recovery Objectives
+            </h2>
+
+
+            <div class="lab-grid">
+
+
+                <article class="lab-card">
+
+                    <div class="lab-number">
+                        01
+                    </div>
+
+
+                    <h3>
+                        Firmware Configuration
+                    </h3>
+
+
+                    <p>
+                        Reviewed and restored BIOS/UEFI settings when
+                        firmware configuration contributed to startup
+                        or device problems.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>BIOS</span>
+                        <span>UEFI</span>
+                        <span>Firmware</span>
+
+                    </div>
+
+                </article>
+
+
+
+                <article class="lab-card">
+
+                    <div class="lab-number">
+                        02
+                    </div>
+
+
+                    <h3>
+                        Windows System Repair
+                    </h3>
+
+
+                    <p>
+                        Used Windows repair utilities to identify and
+                        address operating-system file corruption.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>DISM</span>
+                        <span>SFC</span>
+                        <span>Windows</span>
+
+                    </div>
+
+                </article>
+
+
+
+                <article class="lab-card">
+
+                    <div class="lab-number">
+                        03
+                    </div>
+
+
+                    <h3>
+                        Boot Recovery
+                    </h3>
+
+
+                    <p>
+                        Troubleshot boot configuration problems that
+                        prevented Windows from starting successfully.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>bootrec</span>
+                        <span>Boot Configuration</span>
+                        <span>Recovery</span>
+
+                    </div>
+
+                </article>
+
+
+
+                <article class="lab-card">
+
+                    <div class="lab-number">
+                        04
+                    </div>
+
+
+                    <h3>
+                        Recovery Media
+                    </h3>
+
+
+                    <p>
+                        Used Windows installation and recovery media
+                        when standard repair procedures were
+                        insufficient.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>Recovery Media</span>
+                        <span>Windows Setup</span>
+                        <span>Deployment</span>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- EXECUTION -->
+
+    <section class="section methodology-section">
+
+        <div class="container">
+
+            <p class="section-label">
+                TROUBLESHOOTING WORKFLOW
+            </p>
+
+
+            <h2>
+                Recovery Process
+            </h2>
+
+
+            <div class="methodology-grid">
+
+
+                <div class="method-card">
+
+                    <span>01</span>
+
+                    <h3>
+                        Assess the Symptoms
+                    </h3>
+
+                    <p>
+                        Identified whether the endpoint was
+                        experiencing a boot failure, firmware issue,
+                        system-file corruption, or another startup
+                        problem.
+                    </p>
+
+                </div>
+
+
+
+                <div class="method-card">
+
+                    <span>02</span>
+
+                    <h3>
+                        Check BIOS/UEFI
+                    </h3>
+
+                    <p>
+                        Reviewed firmware settings and verified that
+                        the system configuration supported normal
+                        Windows startup.
+                    </p>
+
+                </div>
+
+
+
+                <div class="method-card">
+
+                    <span>03</span>
+
+                    <h3>
+                        Repair Windows
+                    </h3>
+
+                    <p>
+                        Used Windows recovery utilities such as
+                        DISM and SFC to troubleshoot system-file
+                        integrity issues.
+                    </p>
+
+                </div>
+
+
+
+                <div class="method-card">
+
+                    <span>04</span>
+
+                    <h3>
+                        Repair Boot Configuration
+                    </h3>
+
+                    <p>
+                        Troubleshot boot configuration problems using
+                        Windows recovery tools when startup issues
+                        remained.
+                    </p>
+
+                </div>
+
+
+
+                <div class="method-card">
+
+                    <span>05</span>
+
+                    <h3>
+                        Use Recovery Media
+                    </h3>
+
+                    <p>
+                        Used bootable Windows recovery or installation
+                        media when additional repair or operating
+                        system recovery was required.
+                    </p>
+
+                </div>
+
+
+
+                <div class="method-card">
+
+                    <span>06</span>
+
+                    <h3>
+                        Validate the Endpoint
+                    </h3>
+
+                    <p>
+                        Restarted and tested the system after
+                        remediation to verify Windows functionality
+                        and system stability.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- TOOLS -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <p class="section-label">
+                RECOVERY TOOLS
+            </p>
+
+
+            <h2>
+                Tools &amp; Technologies
+            </h2>
+
+
+            <div class="lab-grid">
+
+
+                <article class="lab-card">
+
+                    <h3>
+                        DISM
+                    </h3>
+
+                    <p>
+                        Used the Deployment Image Servicing and
+                        Management tool to diagnose and repair Windows
+                        component-store and image-related issues.
+                    </p>
+
+                </article>
+
+
+
+                <article class="lab-card">
+
+                    <h3>
+                        System File Checker
+                    </h3>
+
+                    <p>
+                        Used SFC to verify Windows protected system
+                        files and identify integrity problems.
+                    </p>
+
+                </article>
+
+
+
+                <article class="lab-card">
+
+                    <h3>
+                        Windows Recovery Environment
+                    </h3>
+
+                    <p>
+                        Used Windows recovery tools to troubleshoot
+                        startup and operating-system problems.
+                    </p>
+
+                </article>
+
+
+
+                <article class="lab-card">
+
+                    <h3>
+                        BIOS / UEFI
+                    </h3>
+
+                    <p>
+                        Reviewed firmware configuration and startup
+                        settings as part of endpoint troubleshooting.
+                    </p>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- OUTCOME -->
+
+    <section class="section">
+
+        <div class="container narrow">
+
+            <p class="section-label">
+                PROJECT OUTCOME
+            </p>
+
+
+            <h2>
+                Structured Endpoint Recovery
+            </h2>
+
+
+            <p>
+                The project established a repeatable approach for
+                diagnosing and recovering Windows endpoints affected
+                by firmware configuration problems, system-file
+                corruption, or boot failures.
+            </p>
+
+
+            <p>
+                The workflow emphasized troubleshooting the least
+                disruptive solution first, validating the results,
+                and documenting the recovery process for future
+                incidents.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- SKILLS -->
+
+    <section class="section skills-section">
+
+        <div class="container">
+
+            <p class="section-label">
+                SKILLS DEMONSTRATED
+            </p>
+
+
+            <h2>
+                Technical Skills
+            </h2>
+
+
+            <div class="skills-list">
+
+                <span>Windows Troubleshooting</span>
+
+                <span>BIOS/UEFI</span>
+
+                <span>DISM</span>
+
+                <span>SFC</span>
+
+                <span>bootrec</span>
+
+                <span>Windows Recovery</span>
+
+                <span>Boot Troubleshooting</span>
+
+                <span>Recovery Media</span>
+
+                <span>System Diagnostics</span>
+
+                <span>OS Repair</span>
+
+                <span>Endpoint Recovery</span>
+
+                <span>Technical Documentation</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- RELATED PROJECTS -->
+
+    <section class="section contact-section">
+
+        <div class="container narrow">
+
+            <p class="section-label">
+                RELATED WORK
+            </p>
+
+
+            <h2>
+                Continue Exploring
+            </h2>
+
+
+            <p>
+                This recovery project connects with your Windows
+                deployment, hardware optimization, and hands-on
+                Home Lab work.
+            </p>
+
+
+            <div class="contact-links">
+
+
+                <a href="enterprise-deployment.html">
+                    Enterprise Deployment →
+                </a>
+
+
+                <a href="hardware-optimization.html">
+                    PC Hardware Optimization →
+                </a>
+
+
+                <a href="projects.html">
+                    All Technical Projects →
+                </a>
+
+
+                <a href="https://victor-donald.github.io/IT-Home-Labs/">
+                    IT Home Labs →
+                </a>
+
+
+                <a href="index.html">
+                    Portfolio Home →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+
+<footer>
+
+    <div class="container footer-content">
+
         <p>
-          This project showcases hands-on recovery of devices experiencing boot loops, firmware errors,
-          and corrupted operating system files. The focus was on restoring functionality without resorting
-          to full hardware replacement, using a combination of firmware tools and OS repair utilities.
+            © 2026 Victor Donald. IT Support &amp; Technical Portfolio.
         </p>
-      </section>
 
-      <section class="detail-section">
-        <h2>Technical Objectives</h2>
-        <ul>
-          <li>Reset and restore BIOS/UEFI firmware settings on malfunctioning systems.</li>
-          <li>Repair corrupted Windows environments using recovery tools and deployment media.</li>
-          <li>Fix boot configuration issues preventing successful startup.</li>
-          <li>Validate system stability and reliability after recovery.</li>
-        </ul>
-      </section>
 
-      <section class="detail-section">
-        <h2>Execution</h2>
         <p>
-          I began by accessing BIOS/UEFI interfaces to reset misconfigured firmware settings and restore
-          default configurations where necessary. For systems with OS-level corruption, I used Windows
-          recovery tools such as <code>DISM</code>, <code>SFC</code>, and <code>bootrec</code> to repair
-          system files and rebuild boot records.
+            Windows Recovery • Diagnostics • Endpoint Support
         </p>
-        <p>
-          In cases where repair was insufficient, I deployed clean OS images using bootable media,
-          ensuring that drivers and critical services were available post-installation. After each recovery,
-          I ran diagnostics and monitored system behavior to confirm stability and reliability.
-        </p>
-      </section>
 
-      <section class="detail-section">
-        <h2>Outcome</h2>
-        <ul>
-          <li>Successfully restored multiple devices from non-functional states to full operation.</li>
-          <li>Reduced downtime by avoiding unnecessary hardware replacement.</li>
-          <li>Established a repeatable workflow for firmware and OS recovery.</li>
-          <li>Improved confidence in recovery procedures for future incidents.</li>
-        </ul>
-      </section>
+    </div>
 
-      <section class="detail-section">
-        <h2>Skills Demonstrated</h2>
-        <div class="detail-skills">
-          <span class="badge">Firmware Recovery (BIOS/UEFI)</span>
-          <span class="badge">OS Repair Utilities (DISM, SFC, bootrec)</span>
-          <span class="badge">Boot Configuration Troubleshooting</span>
-          <span class="badge">Recovery Media Deployment</span>
-          <span class="badge badge-accent">Diagnostic Testing</span>
-        </div>
-      </section>
+</footer>
 
-      <section class="detail-section">
-        <h2>Related Work</h2>
-        <p>
-          This recovery-focused project complements my Enterprise Hardware Deployment & OS Specialization
-          work, where standardized images and driver injection help prevent many issues that later require
-          recovery and repair.
-        </p>
-      </section>
 
-      <footer class="detail-footer">
-        <span>Focused on restoring functionality and minimizing replacement costs.</span>
-        <span><a href="index.html">← Back to Portfolio Home</a></span>
-      </footer>
-    </main>
-  </div>
 </body>
+
 </html>
