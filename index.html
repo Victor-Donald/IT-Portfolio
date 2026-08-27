@@ -1,76 +1,565 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Victor Donald - IT Portfolio</title>
- <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Victor Donald | IT Support & Technical Portfolio</title>
+
+    <meta name="description"
+          content="Victor Donald's IT Support and Technical Portfolio featuring hands-on troubleshooting, hardware, Windows deployment, healthcare systems, database workflows, and enterprise IT projects.">
+
+    <link rel="stylesheet" href="style.css">
 </head>
-<body style="margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; background-color: #f8fafc; color: #1e293b;">
 
-  <!-- 1. Top Navigation Bar -->
-  <nav style="background: #1a1a1a; padding: 15px 20px;">
-    <div style="max-width: 900px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 15px; align-items: center;">
-      <a href="index.html" style="color: white; text-decoration: none; font-weight: bold;">Home</a>
-      <a href="resume.html" style="color: #d1d5db; text-decoration: none;">Resume</a>
-      <a href="resumeV2.html" style="color: #d1d5db; text-decoration: none;">Resume V2</a>
-       <a href="enterprise-deployment.html" style="color:white; margin-right:20px; text-decoration:none;">Enterprise Deployment</a>
-      <a href="hardware-optimization.html" style="color: #d1d5db; text-decoration: none;">Hardware Optimization</a>
-      <a href="os-firmware-recovery.html" style="color: #d1d5db; text-decoration: none;">OS & Firmware Recovery</a>
-      <a href="aws-case-study.html" style="color: #d1d5db; text-decoration: none;">AWS Case Study</a>
-      <a href="project-healthcare.html" style="text-decoration: none; color: #475569; font-weight: 600;">Healthcare Database Portal & Diagnostic Workflow Optimization</a>
-       <a href="project-pos.html" style="text-decoration: none; color: #475569; font-weight: 600;">POS ActiveNet System Administration & Asset Tracking Project</a>
-      <a href="contact.html" style="color: #d1d5db; text-decoration: none;">Contact</a>
-    
+<body>
+
+<header class="site-header">
+
+    <div class="container nav-container">
+
+        <div class="brand">
+            <a href="index.html">Victor Donald</a>
+            <span>IT Support &amp; Technical Portfolio</span>
+        </div>
+
+        <nav aria-label="Main navigation">
+
+            <a href="index.html">Home</a>
+
+            <a href="projects.html">Projects</a>
+
+            <a href="#resumes">Resumes</a>
+
+            <a href="contact.html">Contact</a>
+
+            <a href="https://victor-donald.github.io/IT-Home-Labs/">
+                Home Labs
+            </a>
+
+        </nav>
+
     </div>
-  </nav>
 
-  <!-- Main Container -->
-  <main style="max-width: 900px; margin: 30px auto; padding: 0 20px;">
+</header>
 
-    <!-- 2. Hero / Welcome Banner -->
-    <section style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 30px; margin-bottom: 25px; box-shadow: 0 2px 4px rgba(0,0,0,0.04);">
-      <h1 style="color: #0f172a; margin-top: 0; font-size: 2rem;">Welcome to My IT Portfolio</h1>
-      <p style="color: #475569; font-size: 1.1rem; line-height: 1.6; margin-bottom: 20px;">
-        Showcase of professional IT support experience, healthcare database administration workflows, system diagnostics, and hands-on runbooks.
-      </p>
-      <a href="resume.html" style="display: inline-block; padding: 10px 20px; background: #2563eb; color: white; border-radius: 6px; text-decoration: none; font-weight: 600;">
-        View My Resume &rarr;
-      </a>
+
+<main>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="container hero-content">
+
+            <p class="eyebrow">
+                IT SUPPORT • TECHNICAL PROJECTS • TROUBLESHOOTING
+            </p>
+
+            <h1>
+                IT Support &amp;<br>
+                Technical Portfolio
+            </h1>
+
+            <p class="hero-text">
+                Hands-on IT support projects demonstrating endpoint
+                troubleshooting, Windows deployment, hardware
+                maintenance, systems diagnostics, database workflows,
+                and technical documentation.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a class="button primary"
+                   href="projects.html">
+                    Explore Projects →
+                </a>
+
+                <a class="button secondary"
+                   href="#resumes">
+                    View Resumes
+                </a>
+
+            </div>
+
+        </div>
+
     </section>
 
-    <!-- 3. Featured Project Card -->
-    <section style="margin-bottom: 30px;">
-      <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);">
-        <h3 style="margin-top: 0; color: #0f172a; font-size: 1.25rem;">Technical Projects & Operational Runbooks</h3>
-        <p style="color: #475569; font-size: 0.95rem; line-height: 1.5; margin-bottom: 20px;">
-          Explore hands-on IT support case studies, healthcare database maintenance workflows, and POS ActiveNet system administration documentation.
+
+    <!-- ABOUT -->
+
+    <section class="section">
+
+        <div class="container narrow">
+
+            <p class="section-label">
+                PORTFOLIO OVERVIEW
+            </p>
+
+            <h2>
+                Practical IT Support &amp; Technical Experience
+            </h2>
+
+            <p>
+                This portfolio documents hands-on technical projects
+                and support workflows developed through professional,
+                academic, and independent IT experience.
+            </p>
+
+            <p>
+                Projects emphasize structured troubleshooting,
+                endpoint support, operating-system deployment,
+                hardware maintenance, systems administration,
+                documentation, and user-focused problem solving.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+
+    <section id="projects" class="section labs-section">
+
+        <div class="container">
+
+            <p class="section-label">
+                FEATURED TECHNICAL PROJECTS
+            </p>
+
+            <h2>
+                Technical Projects
+            </h2>
+
+            <p class="section-intro">
+                Explore technical projects demonstrating practical
+                troubleshooting, deployment, maintenance, and
+                systems-support capabilities.
+            </p>
+
+
+            <div class="lab-grid">
+
+
+                <!-- ENTERPRISE DEPLOYMENT -->
+
+                <article class="project-card">
+
+                    <div class="lab-number">
+                        PROJECT 01
+                    </div>
+
+                    <h3>
+                        Enterprise Hardware Deployment &amp; OS Specialization
+                    </h3>
+
+                    <p>
+                        Windows deployment project involving custom
+                        installation media, device-specific driver
+                        integration, storage provisioning, and
+                        deployment troubleshooting.
+                    </p>
+
+                    <div class="tags">
+
+                        <span>Windows Deployment</span>
+                        <span>Drivers</span>
+                        <span>Hardware</span>
+                        <span>CLI</span>
+
+                    </div>
+
+                    <br>
+
+                    <a class="card-link"
+                       href="enterprise-deployment.html">
+                        View Project →
+                    </a>
+
+                </article>
+
+
+                <!-- HARDWARE -->
+
+                <article class="project-card">
+
+                    <div class="lab-number">
+                        PROJECT 02
+                    </div>
+
+                    <h3>
+                        PC Hardware Optimization &amp; Storage Upgrade
+                    </h3>
+
+                    <p>
+                        Hands-on endpoint maintenance involving SSD
+                        replacement, disk partitioning, storage
+                        optimization, and internal component upgrades.
+                    </p>
+
+                    <div class="tags">
+
+                        <span>Hardware Diagnostics</span>
+                        <span>SSD</span>
+                        <span>Storage</span>
+                        <span>Endpoint Support</span>
+
+                    </div>
+
+                    <br>
+
+                    <a class="card-link"
+                       href="hardware-optimization.html">
+                        View Project →
+                    </a>
+
+                </article>
+
+
+                <!-- OS RECOVERY -->
+
+                <article class="project-card">
+
+                    <div class="lab-number">
+                        PROJECT 03
+                    </div>
+
+                    <h3>
+                        OS &amp; Firmware Recovery
+                    </h3>
+
+                    <p>
+                        System recovery and troubleshooting workflow
+                        focused on operating-system issues, firmware,
+                        boot problems, and endpoint recovery.
+                    </p>
+
+                    <div class="tags">
+
+                        <span>Windows</span>
+                        <span>Recovery</span>
+                        <span>Firmware</span>
+                        <span>Troubleshooting</span>
+
+                    </div>
+
+                    <br>
+
+                    <a class="card-link"
+                       href="os-firmware-recovery.html">
+                        View Project →
+                    </a>
+
+                </article>
+
+
+                <!-- AWS -->
+
+                <article class="project-card">
+
+                    <div class="lab-number">
+                        PROJECT 04
+                    </div>
+
+                    <h3>
+                        AWS Infrastructure Case Study
+                    </h3>
+
+                    <p>
+                        Cloud technology case study demonstrating
+                        infrastructure concepts, system architecture,
+                        and technical problem-solving.
+                    </p>
+
+                    <div class="tags">
+
+                        <span>AWS</span>
+                        <span>Cloud</span>
+                        <span>Infrastructure</span>
+                        <span>Systems</span>
+
+                    </div>
+
+                    <br>
+
+                    <a class="card-link"
+                       href="aws-case-study.html">
+                        View Project →
+                    </a>
+
+                </article>
+
+
+                <!-- HEALTHCARE -->
+
+                <article class="project-card">
+
+                    <div class="lab-number">
+                        PROJECT 05
+                    </div>
+
+                    <h3>
+                        Healthcare Database Portal &amp;
+                        Diagnostic Workflow Optimization
+                    </h3>
+
+                    <p>
+                        Technical project documenting healthcare
+                        database workflows, system maintenance,
+                        diagnostics, and operational support procedures.
+                    </p>
+
+                    <div class="tags">
+
+                        <span>Database</span>
+                        <span>Healthcare IT</span>
+                        <span>Diagnostics</span>
+                        <span>Documentation</span>
+
+                    </div>
+
+                    <br>
+
+                    <a class="card-link"
+                       href="project-healthcare.html">
+                        View Project →
+                    </a>
+
+                </article>
+
+
+                <!-- POS -->
+
+                <article class="project-card">
+
+                    <div class="lab-number">
+                        PROJECT 06
+                    </div>
+
+                    <h3>
+                        POS ActiveNet System Administration
+                        &amp; Asset Tracking
+                    </h3>
+
+                    <p>
+                        System administration and operational workflow
+                        project involving POS ActiveNet, asset tracking,
+                        documentation, and support processes.
+                    </p>
+
+                    <div class="tags">
+
+                        <span>System Administration</span>
+                        <span>ActiveNet</span>
+                        <span>Asset Tracking</span>
+                        <span>Support</span>
+
+                    </div>
+
+                    <br>
+
+                    <a class="card-link"
+                       href="project-pos.html">
+                        View Project →
+                    </a>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- HOME LABS -->
+
+    <section class="section methodology-section">
+
+        <div class="container narrow">
+
+            <p class="section-label">
+                HANDS-ON PRACTICE
+            </p>
+
+            <h2>
+                IT Support Home Labs
+            </h2>
+
+            <p>
+                In addition to the technical projects documented
+                here, I maintain a separate hands-on IT Home Labs
+                portfolio covering Active Directory, Windows
+                troubleshooting, networking, MDM, hardware, and
+                endpoint deployment.
+            </p>
+
+            <div class="contact-links">
+
+                <a href="https://victor-donald.github.io/IT-Home-Labs/">
+                    Explore IT Home Labs →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SKILLS -->
+
+    <section id="skills" class="section skills-section">
+
+        <div class="container">
+
+            <p class="section-label">
+                TECHNICAL SKILLS
+            </p>
+
+            <h2>
+                IT Support Skills
+            </h2>
+
+            <div class="skills-list">
+
+                <span>Windows</span>
+
+                <span>Microsoft 365</span>
+
+                <span>Active Directory</span>
+
+                <span>DNS</span>
+
+                <span>DHCP</span>
+
+                <span>TCP/IP</span>
+
+                <span>Network Troubleshooting</span>
+
+                <span>Hardware Troubleshooting</span>
+
+                <span>Windows Deployment</span>
+
+                <span>OS Recovery</span>
+
+                <span>MDM</span>
+
+                <span>VPN</span>
+
+                <span>MFA</span>
+
+                <span>Endpoint Support</span>
+
+                <span>Technical Documentation</span>
+
+                <span>Tier 1 Troubleshooting</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- RESUMES -->
+
+    <section id="resumes" class="section">
+
+        <div class="container narrow">
+
+            <p class="section-label">
+                PROFESSIONAL RESOURCES
+            </p>
+
+            <h2>
+                Resume
+            </h2>
+
+            <p>
+                Download a current version of my IT support resume
+                or review my alternate resume version.
+            </p>
+
+            <div class="contact-links">
+
+                <a href="Victor Donald Help Desk Technician Resume.pdf"
+                   download>
+                    Help Desk Technician Resume ↓
+                </a>
+
+                <a href="Victor donald_resume IT help Desk & Remote Support Specailist1.pdf"
+                   download>
+                    IT Help Desk &amp; Remote Support Resume ↓
+                </a>
+
+                <a href="resume.html">
+                    Resume Page →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section class="section contact-section">
+
+        <div class="container narrow">
+
+            <p class="section-label">
+                CONTACT
+            </p>
+
+            <h2>
+                Let's Connect
+            </h2>
+
+            <p>
+                For professional opportunities, technical support
+                roles, or questions about the projects documented
+                in this portfolio, please visit the contact page.
+            </p>
+
+            <div class="contact-links">
+
+                <a href="contact.html">
+                    Contact Me →
+                </a>
+
+                <a href="https://www.linkedin.com/in/victor-donald-401040420">
+                    LinkedIn →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="container footer-content">
+
+        <p>
+            © 2026 Victor Donald. IT Support &amp; Technical Portfolio.
         </p>
-        <a href="projects.html" style="display: inline-block; background-color: #2563eb; color: #ffffff; text-decoration: none; padding: 10px 20px; border-radius: 6px; font-weight: 600; font-size: 0.9rem;">
-          View Featured Projects &rarr;
-        </a>
-      </div>
-    </section>
 
-    <!-- 4. Download Resumes Section -->
-    <section style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px; margin-bottom: 30px;">
-      <h2 style="margin-top: 0; color: #0f172a; font-size: 1.3rem;">Download My Resumes</h2>
-      <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 15px;">
-        <a href="Victor Donald Help Desk Technician Resume.pdf" download style="display: inline-block; padding: 10px 18px; background: #16a34a; color: white; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.9rem;">
-          📥 Help Desk Technician Resume (PDF)
-        </a>
-        <a href="Victor donald_resume IT help Desk & Remote Support Specailist1.pdf" download style="display: inline-block; padding: 10px 18px; background: #16a34a; color: white; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.9rem;">
-          📥 IT Help Desk & Remote Support Specialist Resume (PDF)
-        </a>
-      </div>
-    </section>
+        <p>
+            IT Support • Troubleshooting • Technical Projects
+        </p>
 
-  </main>
+    </div>
 
-  <!-- 5. Footer -->
-  <footer style="background: #1a1a1a; color: #9ca3af; text-align: center; padding: 20px; margin-top: 40px; font-size: 0.9rem;">
-    © 2026 Victor Donald • IT Support & Systems Specialist
-  </footer>
+</footer>
 
 </body>
 </html>
